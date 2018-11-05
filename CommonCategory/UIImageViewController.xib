@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIImageViewController">
+            <connections>
+                <outlet property="imageView" destination="cha-ec-DVT" id="5cw-Aw-7yW"/>
+                <outlet property="testImageView" destination="k3K-Qo-zZx" id="Lyz-Kx-r6g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="91I-i6-101"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="k3K-Qo-zZx">
+                    <rect key="frame" x="67.5" y="355" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="cha-ec-DVT">
+                    <rect key="frame" x="67.5" y="139" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cha-ec-DVT" secondAttribute="height" multiplier="15:8" id="B4e-df-uiK"/>
+                        <constraint firstAttribute="width" constant="240" id="kbR-hy-Tok"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx3-Dw-g3b">
+                    <rect key="frame" x="165" y="556" width="45" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="fnD-RK-J0x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cha-ec-DVT" firstAttribute="width" secondItem="k3K-Qo-zZx" secondAttribute="width" id="7iN-Em-0Eg"/>
+                <constraint firstItem="cha-ec-DVT" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="EYG-YL-zkE"/>
+                <constraint firstItem="Jx3-Dw-g3b" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="KsH-Hu-WYT"/>
+                <constraint firstItem="Jx3-Dw-g3b" firstAttribute="top" secondItem="k3K-Qo-zZx" secondAttribute="bottom" constant="73" id="OiH-pX-AFF"/>
+                <constraint firstItem="k3K-Qo-zZx" firstAttribute="centerX" secondItem="cha-ec-DVT" secondAttribute="centerX" id="cyn-CE-kbl"/>
+                <constraint firstItem="cha-ec-DVT" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="119" id="d4R-Ul-mwy"/>
+                <constraint firstItem="Jx3-Dw-g3b" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="165" id="h8x-XG-8Lc"/>
+                <constraint firstItem="k3K-Qo-zZx" firstAttribute="top" secondItem="cha-ec-DVT" secondAttribute="bottom" constant="88" id="jix-O4-HBs"/>
+                <constraint firstItem="cha-ec-DVT" firstAttribute="height" secondItem="k3K-Qo-zZx" secondAttribute="height" id="nla-Ev-Gao"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image" width="500" height="333"/>
+    </resources>
+</document>

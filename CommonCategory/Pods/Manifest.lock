@@ -1,0 +1,16 @@
+PODS:
+  - JXTAlertManager (1.0.2)
+
+DEPENDENCIES:
+  - JXTAlertManager
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JXTAlertManager
+
+SPEC CHECKSUMS:
+  JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
+
+PODFILE CHECKSUM: 3766677bbfbbd0a6f7931db22ca554bf156f3403
+
+COCOAPODS: 1.5.2
