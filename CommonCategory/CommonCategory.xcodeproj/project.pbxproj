@@ -19,6 +19,8 @@
 		A5BEFCA2218C2D6C00E096FD /* UIView+gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFCA1218C2D6C00E096FD /* UIView+gesture.m */; };
 		A5BEFCA6218FDC2500E096FD /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFCA5218FDC2500E096FD /* UIColor+hex.m */; };
 		A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFCA8218FDDFE00E096FD /* UIViewViewController.m */; };
+		A5CD147D2191A20900EB5802 /* NSString+unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CD147C2191A20900EB5802 /* NSString+unicode.m */; };
+		A5CD14812191A40600EB5802 /* NSFileManager+path.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CD14802191A40600EB5802 /* NSFileManager+path.m */; };
 		A5D64497218AFDEA00B2A0B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D64496218AFDEA00B2A0B0 /* AppDelegate.m */; };
 		A5D6449A218AFDEA00B2A0B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D64499218AFDEA00B2A0B0 /* ViewController.m */; };
 		A5D6449D218AFDEA00B2A0B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D6449B218AFDEA00B2A0B0 /* Main.storyboard */; };
@@ -67,6 +69,10 @@
 		A5BEFCA5218FDC2500E096FD /* UIColor+hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
 		A5BEFCA7218FDDFE00E096FD /* UIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewViewController.h; sourceTree = "<group>"; };
 		A5BEFCA8218FDDFE00E096FD /* UIViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewViewController.m; sourceTree = "<group>"; };
+		A5CD147B2191A20900EB5802 /* NSString+unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+unicode.h"; sourceTree = "<group>"; };
+		A5CD147C2191A20900EB5802 /* NSString+unicode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+unicode.m"; sourceTree = "<group>"; };
+		A5CD147F2191A40600EB5802 /* NSFileManager+path.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+path.h"; sourceTree = "<group>"; };
+		A5CD14802191A40600EB5802 /* NSFileManager+path.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+path.m"; sourceTree = "<group>"; };
 		A5D64492218AFDEA00B2A0B0 /* CommonCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D64495218AFDEA00B2A0B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D64496218AFDEA00B2A0B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -221,6 +227,24 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
+		A5CD147A2191A1CE00EB5802 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				A5CD147B2191A20900EB5802 /* NSString+unicode.h */,
+				A5CD147C2191A20900EB5802 /* NSString+unicode.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		A5CD147E2191A3E400EB5802 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				A5CD147F2191A40600EB5802 /* NSFileManager+path.h */,
+				A5CD14802191A40600EB5802 /* NSFileManager+path.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
 		A5D64489218AFDEA00B2A0B0 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +275,8 @@
 		A5D64494218AFDEA00B2A0B0 /* CommonCategory */ = {
 			isa = PBXGroup;
 			children = (
+				A5CD147E2191A3E400EB5802 /* NSFileManager */,
+				A5CD147A2191A1CE00EB5802 /* NSString */,
 				A53321632190534500F06E0C /* UIApplication */,
 				A53321622190510D00F06E0C /* Set */,
 				A5332161219050F900F06E0C /* Dictionary */,
@@ -374,6 +400,8 @@
 				A5BEFC9B218BF47400E096FD /* UIView+frame.m in Sources */,
 				A5D644CA218AFEC900B2A0B0 /* UIImage+Color.m in Sources */,
 				A53321672190534500F06E0C /* UIApplication+Category.m in Sources */,
+				A5CD14812191A40600EB5802 /* NSFileManager+path.m in Sources */,
+				A5CD147D2191A20900EB5802 /* NSString+unicode.m in Sources */,
 				A533215E219050B600F06E0C /* NSDictionary Chinese.m in Sources */,
 				A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */,
 				A533214D2190221500F06E0C /* UIColorViewController.m in Sources */,
