@@ -24,9 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)getTmpPath;
 
 // 计算单个文件大小
-+ (float)getFileSizeAtPath:(NSString*)path;
++ (double)getFileSizeAtPath:(NSString*)path;
 // 计算目录大小
-+ (float)getFolderSizeAtPath:(NSString*)path;
++ (double)getFolderSizeAtPath:(NSString*)path;
 // 清除文件
 + (BOOL)clearCache:(NSString *)path;
 @end

@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.titleArray = @[@"UIImage",@"UIView",@"UIColor",@"UIApplication"];
+    self.titleArray = @[@"UIImage",@"UIView",@"UIColor",@"UIApplication",@"NSFileManager"];
 }
 
 #pragma mark - UITableViewDelegate

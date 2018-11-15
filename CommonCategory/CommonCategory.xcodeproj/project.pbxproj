@@ -14,6 +14,7 @@
 		A533215E219050B600F06E0C /* NSDictionary Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = A533215B219050B600F06E0C /* NSDictionary Chinese.m */; };
 		A533215F219050B600F06E0C /* NSSet Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = A533215C219050B600F06E0C /* NSSet Chinese.m */; };
 		A53321672190534500F06E0C /* UIApplication+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A53321652190534500F06E0C /* UIApplication+Category.m */; };
+		A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59C5802219289C700DA988B /* NSFileManagerViewController.m */; };
 		A5BEFC9B218BF47400E096FD /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFC9A218BF47400E096FD /* UIView+frame.m */; };
 		A5BEFC9F218C245800E096FD /* UIView+layer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFC9D218C245700E096FD /* UIView+layer.m */; };
 		A5BEFCA2218C2D6C00E096FD /* UIView+gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFCA1218C2D6C00E096FD /* UIView+gesture.m */; };
@@ -59,6 +60,8 @@
 		A53321642190534500F06E0C /* UIApplication+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Category.h"; sourceTree = "<group>"; };
 		A53321652190534500F06E0C /* UIApplication+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Category.m"; sourceTree = "<group>"; };
 		A53321662190534500F06E0C /* UIApplication+Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Header.h"; sourceTree = "<group>"; };
+		A59C5801219289C700DA988B /* NSFileManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFileManagerViewController.h; sourceTree = "<group>"; };
+		A59C5802219289C700DA988B /* NSFileManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerViewController.m; sourceTree = "<group>"; };
 		A5BEFC99218BF47400E096FD /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		A5BEFC9A218BF47400E096FD /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		A5BEFC9D218C245700E096FD /* UIView+layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+layer.m"; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				A5BEFCA8218FDDFE00E096FD /* UIViewViewController.m */,
 				A53321542190400F00F06E0C /* UIApplicationViewController.h */,
 				A53321552190400F00F06E0C /* UIApplicationViewController.m */,
+				A59C5801219289C700DA988B /* NSFileManagerViewController.h */,
+				A59C5802219289C700DA988B /* NSFileManagerViewController.m */,
 				A5D64498218AFDEA00B2A0B0 /* ViewController.h */,
 				A5D64499218AFDEA00B2A0B0 /* ViewController.m */,
 			);
@@ -402,6 +407,7 @@
 				A53321672190534500F06E0C /* UIApplication+Category.m in Sources */,
 				A5CD14812191A40600EB5802 /* NSFileManager+path.m in Sources */,
 				A5CD147D2191A20900EB5802 /* NSString+unicode.m in Sources */,
+				A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */,
 				A533215E219050B600F06E0C /* NSDictionary Chinese.m in Sources */,
 				A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */,
 				A533214D2190221500F06E0C /* UIColorViewController.m in Sources */,

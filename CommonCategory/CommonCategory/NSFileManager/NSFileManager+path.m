@@ -38,7 +38,7 @@
 }
 
 //计算单个文件大小返回值是M
-+ (float)getFileSizeAtPath:(NSString *)path
++ (double)getFileSizeAtPath:(NSString *)path
 {
     NSFileManager *fileManager=[NSFileManager defaultManager];
     if([fileManager fileExistsAtPath:path]){
@@ -52,25 +52,27 @@
 }
 
 //计算目录大小
-+ (float)getFolderSizeAtPath:(NSString *)path
++ (double)getFolderSizeAtPath:(NSString *)path
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
-    float folderSize = 0.0;
+    double folderSize = 0.0;
     
     if ([fileManager fileExistsAtPath:path]) {
         
         NSArray *childerFiles=[fileManager subpathsAtPath:path];
         
         for (NSString *fileName in childerFiles) {
-            
             NSString *absolutePath = [path stringByAppendingPathComponent:fileName];
-            
-            // 计算单个文件大小
-            folderSize += [self getFileSizeAtPath:absolutePath];
-            
+            BOOL isDirectory = NO;
+            [fileManager fileExistsAtPath:absolutePath isDirectory:&isDirectory];
+            if (isDirectory) {
+                folderSize += [self getFolderSizeAtPath:absolutePath];
+            } else {
+                // 计算单个文件大小
+                folderSize += [self getFileSizeAtPath:absolutePath];
+            }
         }
-        
         return folderSize;
     }
     return 0;
@@ -81,25 +83,13 @@
 {
     NSError *error;
     NSFileManager *fileManager=[NSFileManager defaultManager];
-    
     if ([fileManager fileExistsAtPath:path]) {
-        
-        NSArray *childerFiles=[fileManager subpathsAtPath:path];
-        
-        for (NSString *fileName in childerFiles) {
-            
-            //如有需要，加入条件，过滤掉不想删除的文件
-            
-            NSString *absolutePath = [path stringByAppendingPathComponent:fileName];
-            
-            [fileManager removeItemAtPath:absolutePath error:&error];
+        [fileManager removeItemAtPath:path error:&error];
+        if (error) {
+            NSLog(@"删除文件发生错误：%@",error);
+            return NO;
         }
     }
-    NSLog(@"%@",error.domain);
-    if (error) {
-        return NO;
-    }
-    
     return YES;
 }
 
