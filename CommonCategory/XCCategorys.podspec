@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CommonCategory", "CommonCategory/**/*.{h,m}"
-#s.exclude_files = "Classes/Exclude"
+  s.source_files  = "XCCategorys", "XCCategorys/**/*.{h,m}"
+s.exclude_files = "ViewCotroller/**/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 

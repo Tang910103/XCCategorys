@@ -7,48 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D57D845F7FE1D8316AF07DCF3E189C1 /* Pods-CommonCategory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C21AB6E3654427F65742E4FF6243C87 /* Pods-CommonCategory-dummy.m */; };
-		B587B9A5CC3802FA2BCF39FD5CDE3D2A /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC6294604163F12A2CC97F330CCD93 /* JXTAlertView.m */; };
-		BD56ABB8ACB31CA10C636CCB00C200E4 /* JXTAlertManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9D144E345649CEFC6111CA3C71B5C7 /* JXTAlertManager-dummy.m */; };
-		C06D7BB69EFD7F3289A438122B7D6867 /* JXTAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED302FB1E4B03B0BD620098B9DC9AC6 /* JXTAlertController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7F90481BF7436E47C770B79EFD3AE1E /* JXTAlertManagerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEA5DB094843FD679C11C31AB41C83F /* JXTAlertManagerHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F286D38EC2A4EBF7162C49EED2C9E2DD /* JXTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F5FF90397FC206F00B418ED82A3541 /* JXTAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F3F91015BC8BE492F3DC3A79703EEEA8 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61788B2A80CBF163F2B4AC00C9D339 /* JXTAlertController.m */; };
+		001B9B0CDCB14302FD79FDB23142D6E0 /* Pods-CommonCategory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C21AB6E3654427F65742E4FF6243C87 /* Pods-CommonCategory-dummy.m */; };
+		036A65A4DA44924C46872580AF6962BE /* NSMutableArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6184C16D25883F7F0D98961EFB632F8F /* NSMutableArray+AvoidCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		096D0A6FFEC385D844BDE016F2DFB930 /* AvoidCrash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D23D80A92DD328B6A151BF009E21666A /* AvoidCrash-dummy.m */; };
+		0FC4F7989FBBD5E32E4E0F2863622C69 /* AvoidCrashStubProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3384C8E70524FBD9F52B7835584C71EE /* AvoidCrashStubProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14B08BD5DB14565AB3C578125DCF5B94 /* NSMutableAttributedString+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FF17157CDA50D96A81E05ED4DE7CB9 /* NSMutableAttributedString+AvoidCrash.m */; };
+		158DC7F74708EBE150E42B7DE3BAF47D /* NSString+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE86D891F31EE9D949BD34E3A0AC262 /* NSString+AvoidCrash.m */; };
+		1BF3A8385FC2620513E93B2B0FBBB5E9 /* AvoidCrashProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF9074CE041D5314C1E881A40B56F9F /* AvoidCrashProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C1EB69225490AFC27FB2058E8A70F5E /* NSAttributedString+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = CB521E54A58EF97AD6C27666A5A2D98F /* NSAttributedString+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F0C1E8E99FCA1453F0D5A7EAA33D93F /* NSArray+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF92014112D4510F9C16C0439B309B /* NSArray+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36A73F4D9B79DE1C22EC9C81B32727A1 /* NSMutableDictionary+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 0158FB5278A0D1AF0CC738B91A628666 /* NSMutableDictionary+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AE871C0955E62B4240A1BA7A5AB3F7B /* NSMutableString+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEFA8C4C9CA2B6D9776DC24B0845E39 /* NSMutableString+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4256D31E5C988827DD550A3795CEBEC9 /* NSAttributedString+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 161651FE5F7F67E5500B8C9A6FB51207 /* NSAttributedString+AvoidCrash.m */; };
+		5AC2310D1387D22A09F5670AFD08B4BC /* AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1795D61DE9FC5443627EE3C83EE84A /* AvoidCrash.m */; };
+		604D370CFC7B4B535C3CE225D4118CDD /* NSMutableString+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5600C7781F455FE0B020D0BA658677 /* NSMutableString+AvoidCrash.m */; };
+		64B9791127FC5D9DDD2A1508E44154FA /* NSDictionary+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F250DC1AFCB2539661BC386E223E057 /* NSDictionary+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6739B583363B8E641842CDD076CA31C8 /* NSObject+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD559073CCC681F1619E08B8346B82 /* NSObject+AvoidCrash.m */; };
+		6EB0FC3007DDF1E24DA144FEECB0738A /* NSArray+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 347127DFA4338E7C771514160946A721 /* NSArray+AvoidCrash.m */; };
+		726AC251E889C953AB6556007161443E /* AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D374FF11CEAFEE920F739619428296 /* AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D988EA11A07B8473CB1F643AD3BE1D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604F721E03ECA498CD37D5E070375AA3 /* main.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		852021DDEDDCE62D0D00B634051683BB /* NSMutableDictionary+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F3D188BC0AFAF17DC5398DD3DAD27 /* NSMutableDictionary+AvoidCrash.m */; };
+		87C97CE5DE07CA221A5C6308ECC2F44F /* XCCategorys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CE0856A190F2E4D0974F98D26FA4C1 /* XCCategorys-dummy.m */; };
+		8D9A36615ED083809D84B1EFE4676015 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C08C47AD5DD490E439FBAAC8F40DA57 /* NullSafe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97496C9C2A1F659BED0B4ACC03070ADB /* NSMutableArray+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFA8CCD0F8AA39689CE2044DC526C69 /* NSMutableArray+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A34C34FA47A2085A46B96219CB684E24 /* NullSafe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330F4E4BED78A432B256EA69380BA00 /* NullSafe-dummy.m */; };
+		A53417FB1CE0ACB656A10D98088EE8BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E0D41F78D6F27BDE2AF8C3B4ACE0 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AB1E91023FB2D6F9C769890486560EDF /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D41C9B2462350BDC13B2788B46A8F8C /* AppDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD3E4D9FA14F3337B6559DFB523D0241 /* NSString+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EA758539B1F05A1449BE9AE55C5321 /* NSString+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1B0E86491A8E869069EC37FE04CE9F4 /* AvoidCrashStubProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD1BC70818511B9B7155A081A8B551 /* AvoidCrashStubProxy.m */; };
+		B587B9A5CC3802FA2BCF39FD5CDE3D2A /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425755FE40CD611CF2F04B2A28B5DB6D /* JXTAlertView.m */; };
+		BD56ABB8ACB31CA10C636CCB00C200E4 /* JXTAlertManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51083662F51D49082A1D9F1AE0F620AF /* JXTAlertManager-dummy.m */; };
+		C06D7BB69EFD7F3289A438122B7D6867 /* JXTAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB28022539C8C4FF57405289671532B /* JXTAlertController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB638CE9392AA23047C4166DC239EBE7 /* NSDictionary+AvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E68510197A33AE2EBDA7104456B3B5 /* NSDictionary+AvoidCrash.m */; };
+		D6C53AE1A00CE45B379C1BBB57CB8A33 /* NSMutableAttributedString+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = BA56B03FF2124B24A680AE211CC05AE2 /* NSMutableAttributedString+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7F90481BF7436E47C770B79EFD3AE1E /* JXTAlertManagerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DFFBF0643AAB4D575080824E5AC9F5 /* JXTAlertManagerHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E542AA38AFF23AD25D5FCAA119F21274 /* NSObject+AvoidCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = AF28907CF5F2BCD8428BB712114B4580 /* NSObject+AvoidCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F286D38EC2A4EBF7162C49EED2C9E2DD /* JXTAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12392210310D9931F57B1A4A5832A137 /* JXTAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3F91015BC8BE492F3DC3A79703EEEA8 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E612EEF5E71C84FBDDDCFEAA814D48 /* JXTAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A54F439A7DDFD27A7E5D70B56CF20F98 /* PBXContainerItemProxy */ = {
+		3111AE4685FB45BA7438EBF28DA09FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 362B4AA9FF5AA4BF16B73BC471E656F1;
 			remoteInfo = JXTAlertManager;
 		};
+		3300D424227A413DD18CDCA2920CEFAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE303EDB45AE043B99DB1095CA502A29;
+			remoteInfo = AvoidCrash;
+		};
+		424510103682BE7B9749453E701B387F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE303EDB45AE043B99DB1095CA502A29;
+			remoteInfo = AvoidCrash;
+		};
+		991DEE1258688BEE92ED5AE0592584B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF4958A8846F6977762BDBB28AB4FC2;
+			remoteInfo = NullSafe;
+		};
+		AE485F299FDB625D3117A3CC32B41070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF4958A8846F6977762BDBB28AB4FC2;
+			remoteInfo = NullSafe;
+		};
+		DBC256CDE290DC4E0A1E2E12D55FA588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C9E5EB40778902D11A6E7567AB2F77A;
+			remoteInfo = XCCategorys;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		058966D17E8C88B88C6DE65C6896E6EA /* JXTAlertManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTAlertManager-prefix.pch"; sourceTree = "<group>"; };
+		0158FB5278A0D1AF0CC738B91A628666 /* NSMutableDictionary+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+AvoidCrash.h"; path = "AvoidCrash/NSMutableDictionary+AvoidCrash.h"; sourceTree = "<group>"; };
+		0CF9074CE041D5314C1E881A40B56F9F /* AvoidCrashProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AvoidCrashProtocol.h; path = AvoidCrash/AvoidCrashProtocol.h; sourceTree = "<group>"; };
+		0CFA8CCD0F8AA39689CE2044DC526C69 /* NSMutableArray+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+AvoidCrash.h"; path = "AvoidCrash/NSMutableArray+AvoidCrash.h"; sourceTree = "<group>"; };
 		0E6C3376A6251E6C70B0C7C55D92B0BE /* Pods-CommonCategory-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommonCategory-frameworks.sh"; sourceTree = "<group>"; };
-		11BBDEAD3529642D18A56E0E2267B506 /* JXTAlertManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXTAlertManager.xcconfig; sourceTree = "<group>"; };
-		12F5FF90397FC206F00B418ED82A3541 /* JXTAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertView.h; path = JXTAlertManager/AlertView/JXTAlertView.h; sourceTree = "<group>"; };
-		1C9D144E345649CEFC6111CA3C71B5C7 /* JXTAlertManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXTAlertManager-dummy.m"; sourceTree = "<group>"; };
-		1F61788B2A80CBF163F2B4AC00C9D339 /* JXTAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertController.m; path = JXTAlertManager/AlertController/JXTAlertController.m; sourceTree = "<group>"; };
-		2414AF652ADF18C956259B80FD4060AC /* libPods-CommonCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CommonCategory.a"; path = "libPods-CommonCategory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ED302FB1E4B03B0BD620098B9DC9AC6 /* JXTAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertController.h; path = JXTAlertManager/AlertController/JXTAlertController.h; sourceTree = "<group>"; };
+		12392210310D9931F57B1A4A5832A137 /* JXTAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertView.h; path = JXTAlertManager/AlertView/JXTAlertView.h; sourceTree = "<group>"; };
+		12CD1BC70818511B9B7155A081A8B551 /* AvoidCrashStubProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AvoidCrashStubProxy.m; path = AvoidCrash/AvoidCrashStubProxy.m; sourceTree = "<group>"; };
+		1330F4E4BED78A432B256EA69380BA00 /* NullSafe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NullSafe-dummy.m"; sourceTree = "<group>"; };
+		161651FE5F7F67E5500B8C9A6FB51207 /* NSAttributedString+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+AvoidCrash.m"; path = "AvoidCrash/NSAttributedString+AvoidCrash.m"; sourceTree = "<group>"; };
+		1EC0E0D41F78D6F27BDE2AF8C3B4ACE0 /* AppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CommonCategory/AppDelegate.m; sourceTree = "<group>"; };
+		21EC7803357B7EA544EAE45F9EEAD9F1 /* libNullSafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNullSafe.a; path = libNullSafe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB590EE43F913F0D67036CD0B23D281 /* libJXTAlertManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJXTAlertManager.a; path = libJXTAlertManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384C8E70524FBD9F52B7835584C71EE /* AvoidCrashStubProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AvoidCrashStubProxy.h; path = AvoidCrash/AvoidCrashStubProxy.h; sourceTree = "<group>"; };
+		33E612EEF5E71C84FBDDDCFEAA814D48 /* JXTAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertController.m; path = JXTAlertManager/AlertController/JXTAlertController.m; sourceTree = "<group>"; };
+		347127DFA4338E7C771514160946A721 /* NSArray+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+AvoidCrash.m"; path = "AvoidCrash/NSArray+AvoidCrash.m"; sourceTree = "<group>"; };
+		3B7F3D188BC0AFAF17DC5398DD3DAD27 /* NSMutableDictionary+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+AvoidCrash.m"; path = "AvoidCrash/NSMutableDictionary+AvoidCrash.m"; sourceTree = "<group>"; };
+		3C1791822E69C7D43100B05144BAA00C /* AvoidCrash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AvoidCrash-prefix.pch"; sourceTree = "<group>"; };
+		3D41C9B2462350BDC13B2788B46A8F8C /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CommonCategory/AppDelegate.h; sourceTree = "<group>"; };
+		425755FE40CD611CF2F04B2A28B5DB6D /* JXTAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertView.m; path = JXTAlertManager/AlertView/JXTAlertView.m; sourceTree = "<group>"; };
+		4497E2FE275B54D925A77F28F2F65550 /* libPods-CommonCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CommonCategory.a"; path = "libPods-CommonCategory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A83E226AF999EAE4126F93CA82924C /* libAvoidCrash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAvoidCrash.a; path = libAvoidCrash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E68510197A33AE2EBDA7104456B3B5 /* NSDictionary+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+AvoidCrash.m"; path = "AvoidCrash/NSDictionary+AvoidCrash.m"; sourceTree = "<group>"; };
+		4F250DC1AFCB2539661BC386E223E057 /* NSDictionary+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+AvoidCrash.h"; path = "AvoidCrash/NSDictionary+AvoidCrash.h"; sourceTree = "<group>"; };
+		4FB28022539C8C4FF57405289671532B /* JXTAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertController.h; path = JXTAlertManager/AlertController/JXTAlertController.h; sourceTree = "<group>"; };
+		51083662F51D49082A1D9F1AE0F620AF /* JXTAlertManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXTAlertManager-dummy.m"; sourceTree = "<group>"; };
+		54CE0856A190F2E4D0974F98D26FA4C1 /* XCCategorys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCCategorys-dummy.m"; sourceTree = "<group>"; };
+		59AB8ADCF617B4BBF991DBC9CFD22645 /* XCCategorys.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCCategorys.xcconfig; sourceTree = "<group>"; };
 		5C21AB6E3654427F65742E4FF6243C87 /* Pods-CommonCategory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CommonCategory-dummy.m"; sourceTree = "<group>"; };
-		7ADC6294604163F12A2CC97F330CCD93 /* JXTAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXTAlertView.m; path = JXTAlertManager/AlertView/JXTAlertView.m; sourceTree = "<group>"; };
+		604F721E03ECA498CD37D5E070375AA3 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CommonCategory/main.m; sourceTree = "<group>"; };
+		6184C16D25883F7F0D98961EFB632F8F /* NSMutableArray+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+AvoidCrash.m"; path = "AvoidCrash/NSMutableArray+AvoidCrash.m"; sourceTree = "<group>"; };
+		62D374FF11CEAFEE920F739619428296 /* AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AvoidCrash.h; path = AvoidCrash/AvoidCrash.h; sourceTree = "<group>"; };
+		62EA758539B1F05A1449BE9AE55C5321 /* NSString+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+AvoidCrash.h"; path = "AvoidCrash/NSString+AvoidCrash.h"; sourceTree = "<group>"; };
+		63166E49F9C05C80AE86B581BA49AE53 /* XCCategorys-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCCategorys-prefix.pch"; sourceTree = "<group>"; };
+		64DFFBF0643AAB4D575080824E5AC9F5 /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertManagerHeader.h; path = JXTAlertManager/JXTAlertManagerHeader.h; sourceTree = "<group>"; };
+		684E29422C4705AA58554ECE92D47FDD /* JXTAlertManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXTAlertManager.xcconfig; sourceTree = "<group>"; };
+		76A189B1E47FCCE49B682D48E522A76D /* AvoidCrash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AvoidCrash.xcconfig; sourceTree = "<group>"; };
+		81DC8D055F4C399306E4577149BBE433 /* NullSafe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NullSafe-prefix.pch"; sourceTree = "<group>"; };
+		86B329FE8B18ECA74CC358054F5013D5 /* libXCCategorys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libXCCategorys.a; path = libXCCategorys.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECD559073CCC681F1619E08B8346B82 /* NSObject+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AvoidCrash.m"; path = "AvoidCrash/NSObject+AvoidCrash.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C08C47AD5DD490E439FBAAC8F40DA57 /* NullSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NullSafe.m; path = NullSafe/NullSafe.m; sourceTree = "<group>"; };
+		9DDF92014112D4510F9C16C0439B309B /* NSArray+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+AvoidCrash.h"; path = "AvoidCrash/NSArray+AvoidCrash.h"; sourceTree = "<group>"; };
+		9E1795D61DE9FC5443627EE3C83EE84A /* AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AvoidCrash.m; path = AvoidCrash/AvoidCrash.m; sourceTree = "<group>"; };
+		9E5600C7781F455FE0B020D0BA658677 /* NSMutableString+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+AvoidCrash.m"; path = "AvoidCrash/NSMutableString+AvoidCrash.m"; sourceTree = "<group>"; };
 		A00D6BC0336167ACC4DF54B78C9A2019 /* Pods-CommonCategory-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommonCategory-resources.sh"; sourceTree = "<group>"; };
-		C1B51C240F64C0380DAC4384E614F402 /* libJXTAlertManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJXTAlertManager.a; path = libJXTAlertManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7644A0C963B6F9130419EB234C44440 /* JXTAlertManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXTAlertManager-prefix.pch"; sourceTree = "<group>"; };
+		A93B390DD2E60DB610AD026D26616FEC /* NullSafe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NullSafe.xcconfig; sourceTree = "<group>"; };
+		AF28907CF5F2BCD8428BB712114B4580 /* NSObject+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AvoidCrash.h"; path = "AvoidCrash/NSObject+AvoidCrash.h"; sourceTree = "<group>"; };
+		BA56B03FF2124B24A680AE211CC05AE2 /* NSMutableAttributedString+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+AvoidCrash.h"; path = "AvoidCrash/NSMutableAttributedString+AvoidCrash.h"; sourceTree = "<group>"; };
+		BFEFA8C4C9CA2B6D9776DC24B0845E39 /* NSMutableString+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+AvoidCrash.h"; path = "AvoidCrash/NSMutableString+AvoidCrash.h"; sourceTree = "<group>"; };
+		C0FF17157CDA50D96A81E05ED4DE7CB9 /* NSMutableAttributedString+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+AvoidCrash.m"; path = "AvoidCrash/NSMutableAttributedString+AvoidCrash.m"; sourceTree = "<group>"; };
+		CB521E54A58EF97AD6C27666A5A2D98F /* NSAttributedString+AvoidCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+AvoidCrash.h"; path = "AvoidCrash/NSAttributedString+AvoidCrash.h"; sourceTree = "<group>"; };
 		CBBB91E109D9346CB8E3C51283C9AB72 /* Pods-CommonCategory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommonCategory.debug.xcconfig"; sourceTree = "<group>"; };
-		CBEA5DB094843FD679C11C31AB41C83F /* JXTAlertManagerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXTAlertManagerHeader.h; path = JXTAlertManager/JXTAlertManagerHeader.h; sourceTree = "<group>"; };
+		D23D80A92DD328B6A151BF009E21666A /* AvoidCrash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AvoidCrash-dummy.m"; sourceTree = "<group>"; };
 		EAD69F66B5EC161BE0CBF948343AC3D2 /* Pods-CommonCategory-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CommonCategory-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ECE86D891F31EE9D949BD34E3A0AC262 /* NSString+AvoidCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+AvoidCrash.m"; path = "AvoidCrash/NSString+AvoidCrash.m"; sourceTree = "<group>"; };
 		EF80297B81B07FCB5618C0FC041BB8AD /* Pods-CommonCategory-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CommonCategory-acknowledgements.plist"; sourceTree = "<group>"; };
 		F46897213F3B18E1AEB9EE2A58A70B51 /* Pods-CommonCategory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommonCategory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		70BF220BCC3C2AABDA0FD499A6810D05 /* Frameworks */ = {
+		240F5782248FDD8FD6149B64AA6501FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C6858FD45CE1BA16E7EE4488077D38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,14 +173,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CABA94C766B9B42D40ADB717249923AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35465E8163A16D3A9C2504272A7EAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0197E9036A56224BA89DA1DAE1C1A679 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A93B390DD2E60DB610AD026D26616FEC /* NullSafe.xcconfig */,
+				1330F4E4BED78A432B256EA69380BA00 /* NullSafe-dummy.m */,
+				81DC8D055F4C399306E4577149BBE433 /* NullSafe-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NullSafe";
+			sourceTree = "<group>";
+		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		115102F414E9C2247B082F5CE02B165C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B880329740E41CED761A45115502ED16 /* AvoidCrash */,
+				6AC84618285836481D26340812565CBE /* JXTAlertManager */,
+				6F0175AA22F9622B0AB384994F8C6D06 /* NullSafe */,
+				77B62EB768A52050D3309DB76FACB936 /* XCCategorys */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1C8AAA4FA774F3A4D5CC30A71C53A1FE /* Pods-CommonCategory */ = {
@@ -95,18 +242,51 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3D7195F8DA4772CC6CEA67A7B57B199A /* JXTAlertManager */ = {
+		68511EA44A169DE983BB17B30DFFB81C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3ED302FB1E4B03B0BD620098B9DC9AC6 /* JXTAlertController.h */,
-				1F61788B2A80CBF163F2B4AC00C9D339 /* JXTAlertController.m */,
-				CBEA5DB094843FD679C11C31AB41C83F /* JXTAlertManagerHeader.h */,
-				12F5FF90397FC206F00B418ED82A3541 /* JXTAlertView.h */,
-				7ADC6294604163F12A2CC97F330CCD93 /* JXTAlertView.m */,
-				FBEFE7848D1094C24879B4122CB0370E /* Support Files */,
+				684E29422C4705AA58554ECE92D47FDD /* JXTAlertManager.xcconfig */,
+				51083662F51D49082A1D9F1AE0F620AF /* JXTAlertManager-dummy.m */,
+				A7644A0C963B6F9130419EB234C44440 /* JXTAlertManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JXTAlertManager";
+			sourceTree = "<group>";
+		};
+		6AC84618285836481D26340812565CBE /* JXTAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				4FB28022539C8C4FF57405289671532B /* JXTAlertController.h */,
+				33E612EEF5E71C84FBDDDCFEAA814D48 /* JXTAlertController.m */,
+				64DFFBF0643AAB4D575080824E5AC9F5 /* JXTAlertManagerHeader.h */,
+				12392210310D9931F57B1A4A5832A137 /* JXTAlertView.h */,
+				425755FE40CD611CF2F04B2A28B5DB6D /* JXTAlertView.m */,
+				68511EA44A169DE983BB17B30DFFB81C /* Support Files */,
 			);
 			name = JXTAlertManager;
 			path = JXTAlertManager;
+			sourceTree = "<group>";
+		};
+		6F0175AA22F9622B0AB384994F8C6D06 /* NullSafe */ = {
+			isa = PBXGroup;
+			children = (
+				9C08C47AD5DD490E439FBAAC8F40DA57 /* NullSafe.m */,
+				0197E9036A56224BA89DA1DAE1C1A679 /* Support Files */,
+			);
+			name = NullSafe;
+			path = NullSafe;
+			sourceTree = "<group>";
+		};
+		77B62EB768A52050D3309DB76FACB936 /* XCCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				3D41C9B2462350BDC13B2788B46A8F8C /* AppDelegate.h */,
+				1EC0E0D41F78D6F27BDE2AF8C3B4ACE0 /* AppDelegate.m */,
+				604F721E03ECA498CD37D5E070375AA3 /* main.m */,
+				EB5F2B442A640F2412818B476F3E780E /* Support Files */,
+			);
+			name = XCCategorys;
+			path = XCCategorys;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -114,43 +294,100 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				84ED322C03CCFC5E35897369B5110096 /* Pods */,
-				899784E465116124A9BDF26DD56F3F1C /* Products */,
+				115102F414E9C2247B082F5CE02B165C /* Pods */,
+				9235B0E09D5AD6D7445984E230C78AF2 /* Products */,
 				3C6D6CF3E988A5D10EE22D95D7D3EAB6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84ED322C03CCFC5E35897369B5110096 /* Pods */ = {
+		84049879FE03188C39FBE8714836BA4D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D7195F8DA4772CC6CEA67A7B57B199A /* JXTAlertManager */,
+				76A189B1E47FCCE49B682D48E522A76D /* AvoidCrash.xcconfig */,
+				D23D80A92DD328B6A151BF009E21666A /* AvoidCrash-dummy.m */,
+				3C1791822E69C7D43100B05144BAA00C /* AvoidCrash-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/AvoidCrash";
 			sourceTree = "<group>";
 		};
-		899784E465116124A9BDF26DD56F3F1C /* Products */ = {
+		9235B0E09D5AD6D7445984E230C78AF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1B51C240F64C0380DAC4384E614F402 /* libJXTAlertManager.a */,
-				2414AF652ADF18C956259B80FD4060AC /* libPods-CommonCategory.a */,
+				46A83E226AF999EAE4126F93CA82924C /* libAvoidCrash.a */,
+				2AB590EE43F913F0D67036CD0B23D281 /* libJXTAlertManager.a */,
+				21EC7803357B7EA544EAE45F9EEAD9F1 /* libNullSafe.a */,
+				4497E2FE275B54D925A77F28F2F65550 /* libPods-CommonCategory.a */,
+				86B329FE8B18ECA74CC358054F5013D5 /* libXCCategorys.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBEFE7848D1094C24879B4122CB0370E /* Support Files */ = {
+		B880329740E41CED761A45115502ED16 /* AvoidCrash */ = {
 			isa = PBXGroup;
 			children = (
-				11BBDEAD3529642D18A56E0E2267B506 /* JXTAlertManager.xcconfig */,
-				1C9D144E345649CEFC6111CA3C71B5C7 /* JXTAlertManager-dummy.m */,
-				058966D17E8C88B88C6DE65C6896E6EA /* JXTAlertManager-prefix.pch */,
+				62D374FF11CEAFEE920F739619428296 /* AvoidCrash.h */,
+				9E1795D61DE9FC5443627EE3C83EE84A /* AvoidCrash.m */,
+				0CF9074CE041D5314C1E881A40B56F9F /* AvoidCrashProtocol.h */,
+				3384C8E70524FBD9F52B7835584C71EE /* AvoidCrashStubProxy.h */,
+				12CD1BC70818511B9B7155A081A8B551 /* AvoidCrashStubProxy.m */,
+				9DDF92014112D4510F9C16C0439B309B /* NSArray+AvoidCrash.h */,
+				347127DFA4338E7C771514160946A721 /* NSArray+AvoidCrash.m */,
+				CB521E54A58EF97AD6C27666A5A2D98F /* NSAttributedString+AvoidCrash.h */,
+				161651FE5F7F67E5500B8C9A6FB51207 /* NSAttributedString+AvoidCrash.m */,
+				4F250DC1AFCB2539661BC386E223E057 /* NSDictionary+AvoidCrash.h */,
+				48E68510197A33AE2EBDA7104456B3B5 /* NSDictionary+AvoidCrash.m */,
+				0CFA8CCD0F8AA39689CE2044DC526C69 /* NSMutableArray+AvoidCrash.h */,
+				6184C16D25883F7F0D98961EFB632F8F /* NSMutableArray+AvoidCrash.m */,
+				BA56B03FF2124B24A680AE211CC05AE2 /* NSMutableAttributedString+AvoidCrash.h */,
+				C0FF17157CDA50D96A81E05ED4DE7CB9 /* NSMutableAttributedString+AvoidCrash.m */,
+				0158FB5278A0D1AF0CC738B91A628666 /* NSMutableDictionary+AvoidCrash.h */,
+				3B7F3D188BC0AFAF17DC5398DD3DAD27 /* NSMutableDictionary+AvoidCrash.m */,
+				BFEFA8C4C9CA2B6D9776DC24B0845E39 /* NSMutableString+AvoidCrash.h */,
+				9E5600C7781F455FE0B020D0BA658677 /* NSMutableString+AvoidCrash.m */,
+				AF28907CF5F2BCD8428BB712114B4580 /* NSObject+AvoidCrash.h */,
+				8ECD559073CCC681F1619E08B8346B82 /* NSObject+AvoidCrash.m */,
+				62EA758539B1F05A1449BE9AE55C5321 /* NSString+AvoidCrash.h */,
+				ECE86D891F31EE9D949BD34E3A0AC262 /* NSString+AvoidCrash.m */,
+				84049879FE03188C39FBE8714836BA4D /* Support Files */,
+			);
+			name = AvoidCrash;
+			path = AvoidCrash;
+			sourceTree = "<group>";
+		};
+		EB5F2B442A640F2412818B476F3E780E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59AB8ADCF617B4BBF991DBC9CFD22645 /* XCCategorys.xcconfig */,
+				54CE0856A190F2E4D0974F98D26FA4C1 /* XCCategorys-dummy.m */,
+				63166E49F9C05C80AE86B581BA49AE53 /* XCCategorys-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JXTAlertManager";
+			path = "../Target Support Files/XCCategorys";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		6A0E42EFE0516FB1DCC7702579CC6223 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726AC251E889C953AB6556007161443E /* AvoidCrash.h in Headers */,
+				1BF3A8385FC2620513E93B2B0FBBB5E9 /* AvoidCrashProtocol.h in Headers */,
+				0FC4F7989FBBD5E32E4E0F2863622C69 /* AvoidCrashStubProxy.h in Headers */,
+				2F0C1E8E99FCA1453F0D5A7EAA33D93F /* NSArray+AvoidCrash.h in Headers */,
+				1C1EB69225490AFC27FB2058E8A70F5E /* NSAttributedString+AvoidCrash.h in Headers */,
+				64B9791127FC5D9DDD2A1508E44154FA /* NSDictionary+AvoidCrash.h in Headers */,
+				97496C9C2A1F659BED0B4ACC03070ADB /* NSMutableArray+AvoidCrash.h in Headers */,
+				D6C53AE1A00CE45B379C1BBB57CB8A33 /* NSMutableAttributedString+AvoidCrash.h in Headers */,
+				36A73F4D9B79DE1C22EC9C81B32727A1 /* NSMutableDictionary+AvoidCrash.h in Headers */,
+				3AE871C0955E62B4240A1BA7A5AB3F7B /* NSMutableString+AvoidCrash.h in Headers */,
+				E542AA38AFF23AD25D5FCAA119F21274 /* NSObject+AvoidCrash.h in Headers */,
+				AD3E4D9FA14F3337B6559DFB523D0241 /* NSString+AvoidCrash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		853DC9626BA8C1F53A903A2246C7EE19 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +395,14 @@
 				C06D7BB69EFD7F3289A438122B7D6867 /* JXTAlertController.h in Headers */,
 				D7F90481BF7436E47C770B79EFD3AE1E /* JXTAlertManagerHeader.h in Headers */,
 				F286D38EC2A4EBF7162C49EED2C9E2DD /* JXTAlertView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BD2219D7505EF4AAB41F04E496FD18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E91023FB2D6F9C769890486560EDF /* AppDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,24 +423,79 @@
 			);
 			name = JXTAlertManager;
 			productName = JXTAlertManager;
-			productReference = C1B51C240F64C0380DAC4384E614F402 /* libJXTAlertManager.a */;
+			productReference = 2AB590EE43F913F0D67036CD0B23D281 /* libJXTAlertManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BC7EA685173EA9CCBB8E9BC3431CA19D /* Pods-CommonCategory */ = {
+		4C9E5EB40778902D11A6E7567AB2F77A /* XCCategorys */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC2EDBB9F355D3E7809707AF6FBBEDA5 /* Build configuration list for PBXNativeTarget "Pods-CommonCategory" */;
+			buildConfigurationList = 40216C0F8CAF71C4D9FC6B77F783DA18 /* Build configuration list for PBXNativeTarget "XCCategorys" */;
 			buildPhases = (
-				3102548BF759C4F9DC0E4014A9DE40DD /* Sources */,
-				70BF220BCC3C2AABDA0FD499A6810D05 /* Frameworks */,
+				6ED63A0B32483BC399B16823C1FA2F6E /* Sources */,
+				240F5782248FDD8FD6149B64AA6501FD /* Frameworks */,
+				A1BD2219D7505EF4AAB41F04E496FD18 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3B377891721F86F264A9EDAD7F18A640 /* PBXTargetDependency */,
+				0F017697E1CDE40DC93E1E289FD3389F /* PBXTargetDependency */,
+				236E82C0D019247FECCAE1385014A20D /* PBXTargetDependency */,
+			);
+			name = XCCategorys;
+			productName = XCCategorys;
+			productReference = 86B329FE8B18ECA74CC358054F5013D5 /* libXCCategorys.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC1A5A5BEA6BE1D2969FE5CBA0212492 /* Pods-CommonCategory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD285A2AC68797012D286D252BD2ACD /* Build configuration list for PBXNativeTarget "Pods-CommonCategory" */;
+			buildPhases = (
+				B853DF0C5AC3AFEE5BD1381AF8DEBE1A /* Sources */,
+				49C6858FD45CE1BA16E7EE4488077D38 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017D6C24C339CDE6A05FD624BF698DA8 /* PBXTargetDependency */,
+				33656812BB991B9B3294051FA4A915FF /* PBXTargetDependency */,
+				DF9460C81DB03D9D8DEF4CEB3F7BDB84 /* PBXTargetDependency */,
+				A10D67919ADFC521B1DEE4195C71026A /* PBXTargetDependency */,
 			);
 			name = "Pods-CommonCategory";
 			productName = "Pods-CommonCategory";
-			productReference = 2414AF652ADF18C956259B80FD4060AC /* libPods-CommonCategory.a */;
+			productReference = 4497E2FE275B54D925A77F28F2F65550 /* libPods-CommonCategory.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CCF4958A8846F6977762BDBB28AB4FC2 /* NullSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F2CEF1974F538797447C30F12739430 /* Build configuration list for PBXNativeTarget "NullSafe" */;
+			buildPhases = (
+				0103A9F9C216D383E93B634C77D9FA16 /* Sources */,
+				F35465E8163A16D3A9C2504272A7EAEB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NullSafe;
+			productName = NullSafe;
+			productReference = 21EC7803357B7EA544EAE45F9EEAD9F1 /* libNullSafe.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE303EDB45AE043B99DB1095CA502A29 /* AvoidCrash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589970FC2FAB5057A7FDA64446DC8E0C /* Build configuration list for PBXNativeTarget "AvoidCrash" */;
+			buildPhases = (
+				C1B3712231096F135564482DD2DCF1D0 /* Sources */,
+				CABA94C766B9B42D40ADB717249923AE /* Frameworks */,
+				6A0E42EFE0516FB1DCC7702579CC6223 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvoidCrash;
+			productName = AvoidCrash;
+			productReference = 46A83E226AF999EAE4126F93CA82924C /* libAvoidCrash.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -215,22 +515,26 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 899784E465116124A9BDF26DD56F3F1C /* Products */;
+			productRefGroup = 9235B0E09D5AD6D7445984E230C78AF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CE303EDB45AE043B99DB1095CA502A29 /* AvoidCrash */,
 				362B4AA9FF5AA4BF16B73BC471E656F1 /* JXTAlertManager */,
-				BC7EA685173EA9CCBB8E9BC3431CA19D /* Pods-CommonCategory */,
+				CCF4958A8846F6977762BDBB28AB4FC2 /* NullSafe */,
+				BC1A5A5BEA6BE1D2969FE5CBA0212492 /* Pods-CommonCategory */,
+				4C9E5EB40778902D11A6E7567AB2F77A /* XCCategorys */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3102548BF759C4F9DC0E4014A9DE40DD /* Sources */ = {
+		0103A9F9C216D383E93B634C77D9FA16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D57D845F7FE1D8316AF07DCF3E189C1 /* Pods-CommonCategory-dummy.m in Sources */,
+				A34C34FA47A2085A46B96219CB684E24 /* NullSafe-dummy.m in Sources */,
+				8D9A36615ED083809D84B1EFE4676015 /* NullSafe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,18 +548,108 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ED63A0B32483BC399B16823C1FA2F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53417FB1CE0ACB656A10D98088EE8BB /* AppDelegate.m in Sources */,
+				7D988EA11A07B8473CB1F643AD3BE1D2 /* main.m in Sources */,
+				87C97CE5DE07CA221A5C6308ECC2F44F /* XCCategorys-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B853DF0C5AC3AFEE5BD1381AF8DEBE1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001B9B0CDCB14302FD79FDB23142D6E0 /* Pods-CommonCategory-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B3712231096F135564482DD2DCF1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D0A6FFEC385D844BDE016F2DFB930 /* AvoidCrash-dummy.m in Sources */,
+				5AC2310D1387D22A09F5670AFD08B4BC /* AvoidCrash.m in Sources */,
+				B1B0E86491A8E869069EC37FE04CE9F4 /* AvoidCrashStubProxy.m in Sources */,
+				6EB0FC3007DDF1E24DA144FEECB0738A /* NSArray+AvoidCrash.m in Sources */,
+				4256D31E5C988827DD550A3795CEBEC9 /* NSAttributedString+AvoidCrash.m in Sources */,
+				CB638CE9392AA23047C4166DC239EBE7 /* NSDictionary+AvoidCrash.m in Sources */,
+				036A65A4DA44924C46872580AF6962BE /* NSMutableArray+AvoidCrash.m in Sources */,
+				14B08BD5DB14565AB3C578125DCF5B94 /* NSMutableAttributedString+AvoidCrash.m in Sources */,
+				852021DDEDDCE62D0D00B634051683BB /* NSMutableDictionary+AvoidCrash.m in Sources */,
+				604D370CFC7B4B535C3CE225D4118CDD /* NSMutableString+AvoidCrash.m in Sources */,
+				6739B583363B8E641842CDD076CA31C8 /* NSObject+AvoidCrash.m in Sources */,
+				158DC7F74708EBE150E42B7DE3BAF47D /* NSString+AvoidCrash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B377891721F86F264A9EDAD7F18A640 /* PBXTargetDependency */ = {
+		017D6C24C339CDE6A05FD624BF698DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AvoidCrash;
+			target = CE303EDB45AE043B99DB1095CA502A29 /* AvoidCrash */;
+			targetProxy = 3300D424227A413DD18CDCA2920CEFAA /* PBXContainerItemProxy */;
+		};
+		0F017697E1CDE40DC93E1E289FD3389F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AvoidCrash;
+			target = CE303EDB45AE043B99DB1095CA502A29 /* AvoidCrash */;
+			targetProxy = 424510103682BE7B9749453E701B387F /* PBXContainerItemProxy */;
+		};
+		236E82C0D019247FECCAE1385014A20D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NullSafe;
+			target = CCF4958A8846F6977762BDBB28AB4FC2 /* NullSafe */;
+			targetProxy = AE485F299FDB625D3117A3CC32B41070 /* PBXContainerItemProxy */;
+		};
+		33656812BB991B9B3294051FA4A915FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JXTAlertManager;
 			target = 362B4AA9FF5AA4BF16B73BC471E656F1 /* JXTAlertManager */;
-			targetProxy = A54F439A7DDFD27A7E5D70B56CF20F98 /* PBXContainerItemProxy */;
+			targetProxy = 3111AE4685FB45BA7438EBF28DA09FA6 /* PBXContainerItemProxy */;
+		};
+		A10D67919ADFC521B1DEE4195C71026A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XCCategorys;
+			target = 4C9E5EB40778902D11A6E7567AB2F77A /* XCCategorys */;
+			targetProxy = DBC256CDE290DC4E0A1E2E12D55FA588 /* PBXContainerItemProxy */;
+		};
+		DF9460C81DB03D9D8DEF4CEB3F7BDB84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NullSafe;
+			target = CCF4958A8846F6977762BDBB28AB4FC2 /* NullSafe */;
+			targetProxy = 991DEE1258688BEE92ED5AE0592584B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0316903FB6B4FD04610D3A896D60563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A189B1E47FCCE49B682D48E522A76D /* AvoidCrash.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AvoidCrash/AvoidCrash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AvoidCrash;
+				PRODUCT_NAME = AvoidCrash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,7 +713,7 @@
 			};
 			name = Debug;
 		};
-		2619A343BBE5060A0DB6F250DC1EEF9F /* Debug */ = {
+		1E88B9AD82FB3E43EB2CDB215792BA69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBBB91E109D9346CB8E3C51283C9AB72 /* Pods-CommonCategory.debug.xcconfig */;
 			buildSettings = {
@@ -342,7 +736,7 @@
 		};
 		7522D1EFF4EF6622A9F224711B4AFFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11BBDEAD3529642D18A56E0E2267B506 /* JXTAlertManager.xcconfig */;
+			baseConfigurationReference = 684E29422C4705AA58554ECE92D47FDD /* JXTAlertManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -363,7 +757,56 @@
 			};
 			name = Debug;
 		};
-		7EB80E99E5C0E72FA7874978E74A67A4 /* Release */ = {
+		8352B6C18DF0E9E05024D45F75FEC3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93B390DD2E60DB610AD026D26616FEC /* NullSafe.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NullSafe/NullSafe-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = NullSafe;
+				PRODUCT_NAME = NullSafe;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89B2E4830CE66673B3FA005FA0CCB75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A189B1E47FCCE49B682D48E522A76D /* AvoidCrash.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AvoidCrash/AvoidCrash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AvoidCrash;
+				PRODUCT_NAME = AvoidCrash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0E34DF1EC75ED3C93D9345A7E7601D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F46897213F3B18E1AEB9EE2A58A70B51 /* Pods-CommonCategory.release.xcconfig */;
 			buildSettings = {
@@ -387,7 +830,7 @@
 		};
 		C17CFEBC40F09C6AC191F49B900916C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11BBDEAD3529642D18A56E0E2267B506 /* JXTAlertManager.xcconfig */;
+			baseConfigurationReference = 684E29422C4705AA58554ECE92D47FDD /* JXTAlertManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -408,6 +851,79 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		C5013711506D4D20F13E9D29A28D9960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59AB8ADCF617B4BBF991DBC9CFD22645 /* XCCategorys.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/XCCategorys/XCCategorys-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = XCCategorys;
+				PRODUCT_NAME = XCCategorys;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF8987AED64BADEB31E7F2943E21161A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59AB8ADCF617B4BBF991DBC9CFD22645 /* XCCategorys.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/XCCategorys/XCCategorys-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = XCCategorys;
+				PRODUCT_NAME = XCCategorys;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9B6B26D7904A89401E1ABC576EDD571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93B390DD2E60DB610AD026D26616FEC /* NullSafe.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NullSafe/NullSafe-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = NullSafe;
+				PRODUCT_NAME = NullSafe;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -470,6 +986,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0FD285A2AC68797012D286D252BD2ACD /* Build configuration list for PBXNativeTarget "Pods-CommonCategory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E88B9AD82FB3E43EB2CDB215792BA69 /* Debug */,
+				C0E34DF1EC75ED3C93D9345A7E7601D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -479,20 +1004,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		40216C0F8CAF71C4D9FC6B77F783DA18 /* Build configuration list for PBXNativeTarget "XCCategorys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF8987AED64BADEB31E7F2943E21161A /* Debug */,
+				C5013711506D4D20F13E9D29A28D9960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F2CEF1974F538797447C30F12739430 /* Build configuration list for PBXNativeTarget "NullSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B6B26D7904A89401E1ABC576EDD571 /* Debug */,
+				8352B6C18DF0E9E05024D45F75FEC3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589970FC2FAB5057A7FDA64446DC8E0C /* Build configuration list for PBXNativeTarget "AvoidCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0316903FB6B4FD04610D3A896D60563D /* Debug */,
+				89B2E4830CE66673B3FA005FA0CCB75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C34E6AB08B3CAC7F97299B5F9AD0EE9F /* Build configuration list for PBXNativeTarget "JXTAlertManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7522D1EFF4EF6622A9F224711B4AFFCA /* Debug */,
 				C17CFEBC40F09C6AC191F49B900916C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC2EDBB9F355D3E7809707AF6FBBEDA5 /* Build configuration list for PBXNativeTarget "Pods-CommonCategory" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2619A343BBE5060A0DB6F250DC1EEF9F /* Debug */,
-				7EB80E99E5C0E72FA7874978E74A67A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

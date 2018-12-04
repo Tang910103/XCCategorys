@@ -1,16 +1,28 @@
 PODS:
+  - AvoidCrash (2.5.2)
   - JXTAlertManager (1.0.2)
+  - NullSafe (2.0)
+  - XCCategorys (0.0.1):
+    - AvoidCrash
+    - NullSafe
 
 DEPENDENCIES:
   - JXTAlertManager
+  - XCCategorys
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AvoidCrash
     - JXTAlertManager
+    - NullSafe
+    - XCCategorys
 
 SPEC CHECKSUMS:
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
+  NullSafe: 948feba938f03abede5ed3758694a9fe5b3a65ce
+  XCCategorys: 8dd38d40f7e8362261ccbed6101eb21083e5e24d
 
-PODFILE CHECKSUM: 525cd1bd977ca6dab35d40d6a6204af6b9f72259
+PODFILE CHECKSUM: e6783b45d6784b24e8a90e837ae7006c5a4bfdf3
 
 COCOAPODS: 1.5.2
