@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "CommonCategory"
+  s.name         = "XCCategorys"
   s.version      = "0.0.1"
   s.summary      = "常用工具"
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "常用工具库"
 
-  s.homepage     = "https://git.xinchao.mobi/iOSKit/CommonCategory.git"
+  s.homepage     = "https://github.com/Tang910103"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://git.xinchao.mobi/iOSKit/CommonCategory.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Tang910103/XCCategorys.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
