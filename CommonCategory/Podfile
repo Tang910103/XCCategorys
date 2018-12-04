@@ -9,14 +9,4 @@ target 'CommonCategory' do
 
   # Pods for CommonCategory
 pod 'JXTAlertManager'
-  target 'CommonCategoryTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'CommonCategoryUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
