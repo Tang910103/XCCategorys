@@ -1,1 +1,0 @@
-../../../XCCategorys/CommonCategory/AppDelegate.h
