@@ -2,7 +2,7 @@ PODS:
   - AvoidCrash (2.5.2)
   - JXTAlertManager (1.0.2)
   - NullSafe (2.0)
-  - XCCategorys (0.0.1):
+  - XCCategorys (1.0.0):
     - AvoidCrash
     - NullSafe
 
@@ -21,7 +21,7 @@ SPEC CHECKSUMS:
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
   NullSafe: 948feba938f03abede5ed3758694a9fe5b3a65ce
-  XCCategorys: 8dd38d40f7e8362261ccbed6101eb21083e5e24d
+  XCCategorys: d1f42d502a29262298a15f382f830056d337e626
 
 PODFILE CHECKSUM: e6783b45d6784b24e8a90e837ae7006c5a4bfdf3
 
