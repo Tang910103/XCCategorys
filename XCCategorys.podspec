@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.author             = { "Tang杰" => "tang910103@qq.com" }
     s.platform     = :ios
     s.source       = { :git => "https://github.com/Tang910103/XCCategorys.git", :tag => "#{s.version}" }
-    s.source_files  = "ViewCotroller/**/*.{h,m}"
+    s.source_files  = "XCCategorys/**/*.{h,m}"
     s.dependency "AvoidCrash"
     s.dependency "NullSafe"
 
