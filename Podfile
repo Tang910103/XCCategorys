@@ -9,6 +9,7 @@ target 'CommonCategory' do
 
   # Pods for CommonCategory
 pod 'JXTAlertManager'
+pod 'Masonry'
 #pod 'AvoidCrash'
 #pod 'NullSafe'
 #pod 'XCCategorys'

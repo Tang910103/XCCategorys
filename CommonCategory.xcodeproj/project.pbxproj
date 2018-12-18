@@ -31,6 +31,7 @@
 		A5D644A5218AFDEA00B2A0B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D644A4218AFDEA00B2A0B0 /* main.m */; };
 		A5D644CE218B03D700B2A0B0 /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D644CC218B03D700B2A0B0 /* UIImageViewController.m */; };
 		A5D644CF218B03D700B2A0B0 /* UIImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D644CD218B03D700B2A0B0 /* UIImageViewController.xib */; };
+		A5EA4B5121C89BA300404EC2 /* UnicodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EA4B5021C89BA300404EC2 /* UnicodeViewController.m */; };
 		BDFF20841CD97C25A2D4439C /* libPods-CommonCategory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C9D23223A7717C22204C8A /* libPods-CommonCategory.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,8 @@
 		A5D644CB218B03D700B2A0B0 /* UIImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewController.h; sourceTree = "<group>"; };
 		A5D644CC218B03D700B2A0B0 /* UIImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewController.m; sourceTree = "<group>"; };
 		A5D644CD218B03D700B2A0B0 /* UIImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImageViewController.xib; sourceTree = "<group>"; };
+		A5EA4B4F21C89BA300404EC2 /* UnicodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicodeViewController.h; sourceTree = "<group>"; };
+		A5EA4B5021C89BA300404EC2 /* UnicodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnicodeViewController.m; sourceTree = "<group>"; };
 		AA5873A0E97D2CBD544C2CEF /* Pods-UIKit-Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-Category.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKit-Category/Pods-UIKit-Category.debug.xcconfig"; sourceTree = "<group>"; };
 		BB3834549B4EFF7D13DDF483 /* Pods-UIKit-CategoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-CategoryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIKit-CategoryUITests/Pods-UIKit-CategoryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBC7138BC014C6B8AA970CBE /* Pods-CommonCategoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonCategoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonCategoryUITests/Pods-CommonCategoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,12 +151,12 @@
 		A51793FC21B6895800A5004B /* XCCategorys */ = {
 			isa = PBXGroup;
 			children = (
+				A517940C21B6895800A5004B /* Set */,
 				A51793FD21B6895800A5004B /* Array */,
 				A517940021B6895800A5004B /* Dictionary */,
 				A517940321B6895800A5004B /* NSFileManager */,
 				A517940621B6895800A5004B /* NSObject */,
 				A517940921B6895800A5004B /* NSString */,
-				A517940C21B6895800A5004B /* Set */,
 				A517940F21B6895800A5004B /* UIApplication */,
 				A517941321B6895800A5004B /* UIColor */,
 				A517941621B6895800A5004B /* UIImage */,
@@ -270,6 +273,8 @@
 				A53321552190400F00F06E0C /* UIApplicationViewController.m */,
 				A59C5801219289C700DA988B /* NSFileManagerViewController.h */,
 				A59C5802219289C700DA988B /* NSFileManagerViewController.m */,
+				A5EA4B4F21C89BA300404EC2 /* UnicodeViewController.h */,
+				A5EA4B5021C89BA300404EC2 /* UnicodeViewController.m */,
 				A5D64498218AFDEA00B2A0B0 /* ViewController.h */,
 				A5D64499218AFDEA00B2A0B0 /* ViewController.m */,
 			);
@@ -396,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EA4B5121C89BA300404EC2 /* UnicodeViewController.m in Sources */,
 				A5D6449A218AFDEA00B2A0B0 /* ViewController.m in Sources */,
 				A53321562190400F00F06E0C /* UIApplicationViewController.m in Sources */,
 				A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */,
