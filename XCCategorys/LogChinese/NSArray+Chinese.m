@@ -1,14 +1,16 @@
 //
-//  NSSet+Chinese.m
-//  ObjCDemo
+//  NSArray+Chinese.m
+//  CommonCategory
 //
-//  Created by Dragon Sun on 15/12/11.
-//  Copyright © 2015年 Dragon Sun. All rights reserved.
-//
+//  Created by Tang杰 on 2018/12/18.
+//  Copyright © 2018年 Tang杰. All rights reserved.
 
-#import "NSSet Chinese.h"
 
-static int logLeve = 0;
+//处理字典、数组、集合输出中文为Unicode问题
+
+#import "NSArray+Chinese.h"
+
+static int TJLogLeve = 0;
 
 @implementation NSSet (Chinese)
 
@@ -27,11 +29,11 @@ static int logLeve = 0;
     // 遍历生成键值对字符串描述
     [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
         [s appendString:@"\n"];
-        for (int i = 0; i <= logLeve; i++) {
+        for (int i = 0; i <= TJLogLeve; i++) {
             [s appendString:@"\t"];
         }
         if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
-            logLeve++;
+            TJLogLeve++;
         }
         [s appendFormat:@"%@%@%@,",[obj isKindOfClass:NSString.class] ? @"\"" : @"", obj, [obj isKindOfClass:NSString.class] ? @"\"" : @""];
     }];
@@ -42,12 +44,12 @@ static int logLeve = 0;
     }
     [s appendString:@"\n"];
     
-    for (int i = 0; i < logLeve; i++) {
+    for (int i = 0; i < TJLogLeve; i++) {
         [s appendString:@"\t"];
     }
     [s appendString:@")}"];
-    if (logLeve > 0) {
-        logLeve--;
+    if (TJLogLeve > 0) {
+        TJLogLeve--;
     }
     
     return s;
@@ -71,11 +73,11 @@ static int logLeve = 0;
     // 遍历生成键值对字符串描述
     [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [s appendString:@"\n"];
-        for (int i = 0; i <= logLeve; i++) {
+        for (int i = 0; i <= TJLogLeve; i++) {
             [s appendString:@"\t"];
         }
         if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
-            logLeve++;
+            TJLogLeve++;
         }
         [s appendFormat:@"%@%@%@,",[obj isKindOfClass:NSString.class] ? @"\"" : @"", obj, [obj isKindOfClass:NSString.class] ? @"\"" : @""];
     }];
@@ -84,12 +86,12 @@ static int logLeve = 0;
         [s deleteCharactersInRange:NSMakeRange(s.length - 1, 1)];
     }
     [s appendString:@"\n"];
-    for (int i = 0; i < logLeve; i++) {
+    for (int i = 0; i < TJLogLeve; i++) {
         [s appendString:@"\t"];
     }
     [s appendString:@"]"];
-    if (logLeve > 0) {
-        logLeve--;
+    if (TJLogLeve > 0) {
+        TJLogLeve--;
     }
     return s;
 }
@@ -114,11 +116,11 @@ static int logLeve = 0;
     // 遍历生成键值对字符串描述
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         [s appendString:@"\n"];
-        for (int i = 0; i <= logLeve; i++) {
+        for (int i = 0; i <= TJLogLeve; i++) {
             [s appendString:@"\t"];
         }
         if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
-            logLeve++;
+            TJLogLeve++;
         }
         [s appendFormat:@"\"%@\" : %@%@%@;", key,[obj isKindOfClass:NSString.class] ? @"\"" : @"", obj, [obj isKindOfClass:NSString.class] ? @"\"" : @""];
     }];
@@ -128,12 +130,12 @@ static int logLeve = 0;
     }
     [s appendString:@"\n"];
     
-    for (int i = 0; i < logLeve; i++) {
+    for (int i = 0; i < TJLogLeve; i++) {
         [s appendString:@"\t"];
     }
     [s appendString:@"}"];
-    if (logLeve > 0) {
-        logLeve--;
+    if (TJLogLeve > 0) {
+        TJLogLeve--;
     }
     return s;
 }
