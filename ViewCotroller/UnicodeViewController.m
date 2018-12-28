@@ -10,7 +10,18 @@
 #import <Masonry/Masonry.h>
 #import "NSString+unicode.h"
 
+// 日志输出
+#ifdef DEBUG
+#define NSLog(format, ...) \
+[self customLog:[NSString stringWithFormat:@"📍行号：%d\n📍方法：%@ \n📍文件路径：%@ \n📍%@ \n\n",__LINE__,[NSString stringWithUTF8String:__FUNCTION__],[NSString stringWithUTF8String:__FILE__],[NSString stringWithFormat:format, ## __VA_ARGS__]]];
+#else
+#define NSLog(format, ...) do { } while (0)
+#endif
+
+
+
 @interface UnicodeViewController ()
+@property (nonatomic, strong) UITextView *textView;
 
 @end
 
@@ -20,6 +31,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UITextView *textView = [[UITextView alloc] init];
+    [self.view addSubview:textView];
+    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    _textView = textView;
     
     [self testArray];
     [self testSet];
@@ -145,4 +163,11 @@
     
     NSLog(@"%@", dict);
 }
+
+- (void)customLog:(NSString *)string
+{
+    printf("%s", [string UTF8String]);
+    [self.textView.textStorage appendAttributedString:[[NSAttributedString alloc] initWithString:string]];
+}
+
 @end

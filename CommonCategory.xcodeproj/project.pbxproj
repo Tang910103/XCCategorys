@@ -18,6 +18,9 @@
 		A517942B21B6895800A5004B /* UIView+layer.m in Sources */ = {isa = PBXBuildFile; fileRef = A517941F21B6895800A5004B /* UIView+layer.m */; };
 		A533214D2190221500F06E0C /* UIColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A533214C2190221500F06E0C /* UIColorViewController.m */; };
 		A53321562190400F00F06E0C /* UIApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53321552190400F00F06E0C /* UIApplicationViewController.m */; };
+		A578E26B21D4C18E0023C054 /* UIDevice+device.m in Sources */ = {isa = PBXBuildFile; fileRef = A578E26A21D4C18E0023C054 /* UIDevice+device.m */; };
+		A578E27821D609D40023C054 /* UIDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A578E27721D609D40023C054 /* UIDeviceViewController.m */; };
+		A578E27D21D62EDE0023C054 /* NSDate+category.m in Sources */ = {isa = PBXBuildFile; fileRef = A578E27C21D62EDE0023C054 /* NSDate+category.m */; };
 		A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59C5802219289C700DA988B /* NSFileManagerViewController.m */; };
 		A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFCA8218FDDFE00E096FD /* UIViewViewController.m */; };
 		A5D4037721C9200F002C307A /* NSArray+Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D4037621C9200F002C307A /* NSArray+Chinese.m */; };
@@ -67,6 +70,13 @@
 		A533214C2190221500F06E0C /* UIColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColorViewController.m; sourceTree = "<group>"; };
 		A53321542190400F00F06E0C /* UIApplicationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIApplicationViewController.h; sourceTree = "<group>"; };
 		A53321552190400F00F06E0C /* UIApplicationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIApplicationViewController.m; sourceTree = "<group>"; };
+		A578E26921D4C18E0023C054 /* UIDevice+device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+device.h"; sourceTree = "<group>"; };
+		A578E26A21D4C18E0023C054 /* UIDevice+device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+device.m"; sourceTree = "<group>"; };
+		A578E27621D609D40023C054 /* UIDeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDeviceViewController.h; sourceTree = "<group>"; };
+		A578E27721D609D40023C054 /* UIDeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDeviceViewController.m; sourceTree = "<group>"; };
+		A578E27921D61DDD0023C054 /* CommonCategory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommonCategory.entitlements; sourceTree = "<group>"; };
+		A578E27B21D62EDE0023C054 /* NSDate+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+category.h"; sourceTree = "<group>"; };
+		A578E27C21D62EDE0023C054 /* NSDate+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+category.m"; sourceTree = "<group>"; };
 		A59C5801219289C700DA988B /* NSFileManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFileManagerViewController.h; sourceTree = "<group>"; };
 		A59C5802219289C700DA988B /* NSFileManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerViewController.m; sourceTree = "<group>"; };
 		A5BEFCA7218FDDFE00E096FD /* UIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewViewController.h; sourceTree = "<group>"; };
@@ -145,6 +155,8 @@
 		A51793FC21B6895800A5004B /* XCCategorys */ = {
 			isa = PBXGroup;
 			children = (
+				A578E27A21D62EC60023C054 /* NSDate */,
+				A578E26821D4C1620023C054 /* UIDevice */,
 				A517940021B6895800A5004B /* LogChinese */,
 				A517940321B6895800A5004B /* NSFileManager */,
 				A517940621B6895800A5004B /* NSObject */,
@@ -249,15 +261,36 @@
 				A59C5802219289C700DA988B /* NSFileManagerViewController.m */,
 				A5EA4B4F21C89BA300404EC2 /* UnicodeViewController.h */,
 				A5EA4B5021C89BA300404EC2 /* UnicodeViewController.m */,
+				A578E27621D609D40023C054 /* UIDeviceViewController.h */,
+				A578E27721D609D40023C054 /* UIDeviceViewController.m */,
 				A5D64498218AFDEA00B2A0B0 /* ViewController.h */,
 				A5D64499218AFDEA00B2A0B0 /* ViewController.m */,
 			);
 			path = ViewCotroller;
 			sourceTree = "<group>";
 		};
+		A578E26821D4C1620023C054 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				A578E26921D4C18E0023C054 /* UIDevice+device.h */,
+				A578E26A21D4C18E0023C054 /* UIDevice+device.m */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		A578E27A21D62EC60023C054 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				A578E27B21D62EDE0023C054 /* NSDate+category.h */,
+				A578E27C21D62EDE0023C054 /* NSDate+category.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		A5D64489218AFDEA00B2A0B0 = {
 			isa = PBXGroup;
 			children = (
+				A578E27921D61DDD0023C054 /* CommonCategory.entitlements */,
 				A51793FC21B6895800A5004B /* XCCategorys */,
 				A533215321903E5E00F06E0C /* ViewCotroller */,
 				A5D64495218AFDEA00B2A0B0 /* AppDelegate.h */,
@@ -314,6 +347,11 @@
 				TargetAttributes = {
 					A5D64491218AFDEA00B2A0B0 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -381,9 +419,12 @@
 				A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */,
 				A517942821B6895800A5004B /* UIImage+Color.m in Sources */,
 				A517942721B6895800A5004B /* UIColor+hex.m in Sources */,
+				A578E27D21D62EDE0023C054 /* NSDate+category.m in Sources */,
 				A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */,
+				A578E27821D609D40023C054 /* UIDeviceViewController.m in Sources */,
 				A533214D2190221500F06E0C /* UIColorViewController.m in Sources */,
 				A5D644A5218AFDEA00B2A0B0 /* main.m in Sources */,
+				A578E26B21D4C18E0023C054 /* UIDevice+device.m in Sources */,
 				A5D644CE218B03D700B2A0B0 /* UIImageViewController.m in Sources */,
 				A517942621B6895800A5004B /* UIApplication+Category.m in Sources */,
 				A517942921B6895800A5004B /* UIView+frame.m in Sources */,
@@ -536,6 +577,7 @@
 			baseConfigurationReference = 44561327BFCB3DAF59F4D2C6 /* Pods-CommonCategory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CommonCategory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BDKEPMWR2;
 				INFOPLIST_FILE = Info.plist;
@@ -555,6 +597,7 @@
 			baseConfigurationReference = 99A66CD7C2893B6929F02AE7 /* Pods-CommonCategory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CommonCategory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BDKEPMWR2;
 				INFOPLIST_FILE = Info.plist;
