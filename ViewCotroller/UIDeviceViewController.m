@@ -7,11 +7,9 @@
 //
 
 #import "UIDeviceViewController.h"
-#import <Masonry.h>
 #import "UIDevice+device.h"
 
 @interface UIDeviceViewController ()
-@property (nonatomic, strong) UITextView *textView;
 
 @end
 
@@ -21,14 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UITextView *textView = [[UITextView alloc] init];
-    textView.textAlignment = NSTextAlignmentCenter;
-    textView.editable = NO;
-    [self.view addSubview:textView];
-    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
-    _textView = textView;
 
     [self appendInfo:@"设备名称" text:UIDevice.deviceName];
     [self appendInfo:@"设备uuid" text:UIDevice.deviceUUID];

@@ -6,11 +6,11 @@
 //  Copyright © 2018年 Tang杰. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIDeviceViewController : UIViewController
+@interface UIDeviceViewController : BaseViewController
 
 @end
 

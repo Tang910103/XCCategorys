@@ -65,4 +65,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 {
     return [self colorWithHexString:color alpha:1.0f];
 }
++ (UIColor *)randomColor
+{
+    return kColor_RGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
+}
+
 @end

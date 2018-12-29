@@ -21,6 +21,10 @@
 		A578E26B21D4C18E0023C054 /* UIDevice+device.m in Sources */ = {isa = PBXBuildFile; fileRef = A578E26A21D4C18E0023C054 /* UIDevice+device.m */; };
 		A578E27821D609D40023C054 /* UIDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A578E27721D609D40023C054 /* UIDeviceViewController.m */; };
 		A578E27D21D62EDE0023C054 /* NSDate+category.m in Sources */ = {isa = PBXBuildFile; fileRef = A578E27C21D62EDE0023C054 /* NSDate+category.m */; };
+		A587824821D704A40027C916 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A587824721D704A40027C916 /* NSDateViewController.m */; };
+		A587824B21D70E830027C916 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A587824A21D70E830027C916 /* BaseViewController.m */; };
+		A587824F21D713120027C916 /* UIControl+category.m in Sources */ = {isa = PBXBuildFile; fileRef = A587824E21D713120027C916 /* UIControl+category.m */; };
+		A587825221D717040027C916 /* UIContorlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A587825121D717040027C916 /* UIContorlViewController.m */; };
 		A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59C5802219289C700DA988B /* NSFileManagerViewController.m */; };
 		A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BEFCA8218FDDFE00E096FD /* UIViewViewController.m */; };
 		A5D4037721C9200F002C307A /* NSArray+Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D4037621C9200F002C307A /* NSArray+Chinese.m */; };
@@ -77,6 +81,14 @@
 		A578E27921D61DDD0023C054 /* CommonCategory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommonCategory.entitlements; sourceTree = "<group>"; };
 		A578E27B21D62EDE0023C054 /* NSDate+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+category.h"; sourceTree = "<group>"; };
 		A578E27C21D62EDE0023C054 /* NSDate+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+category.m"; sourceTree = "<group>"; };
+		A587824621D704A40027C916 /* NSDateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDateViewController.h; sourceTree = "<group>"; };
+		A587824721D704A40027C916 /* NSDateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
+		A587824921D70E830027C916 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A587824A21D70E830027C916 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A587824D21D713120027C916 /* UIControl+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+category.h"; sourceTree = "<group>"; };
+		A587824E21D713120027C916 /* UIControl+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+category.m"; sourceTree = "<group>"; };
+		A587825021D717040027C916 /* UIContorlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIContorlViewController.h; sourceTree = "<group>"; };
+		A587825121D717040027C916 /* UIContorlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIContorlViewController.m; sourceTree = "<group>"; };
 		A59C5801219289C700DA988B /* NSFileManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFileManagerViewController.h; sourceTree = "<group>"; };
 		A59C5802219289C700DA988B /* NSFileManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerViewController.m; sourceTree = "<group>"; };
 		A5BEFCA7218FDDFE00E096FD /* UIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewViewController.h; sourceTree = "<group>"; };
@@ -155,6 +167,7 @@
 		A51793FC21B6895800A5004B /* XCCategorys */ = {
 			isa = PBXGroup;
 			children = (
+				A587824C21D713000027C916 /* UIButton */,
 				A578E27A21D62EC60023C054 /* NSDate */,
 				A578E26821D4C1620023C054 /* UIDevice */,
 				A517940021B6895800A5004B /* LogChinese */,
@@ -249,6 +262,8 @@
 		A533215321903E5E00F06E0C /* ViewCotroller */ = {
 			isa = PBXGroup;
 			children = (
+				A587824921D70E830027C916 /* BaseViewController.h */,
+				A587824A21D70E830027C916 /* BaseViewController.m */,
 				A533214B2190221500F06E0C /* UIColorViewController.h */,
 				A533214C2190221500F06E0C /* UIColorViewController.m */,
 				A5D644CB218B03D700B2A0B0 /* UIImageViewController.h */,
@@ -263,6 +278,10 @@
 				A5EA4B5021C89BA300404EC2 /* UnicodeViewController.m */,
 				A578E27621D609D40023C054 /* UIDeviceViewController.h */,
 				A578E27721D609D40023C054 /* UIDeviceViewController.m */,
+				A587824621D704A40027C916 /* NSDateViewController.h */,
+				A587824721D704A40027C916 /* NSDateViewController.m */,
+				A587825021D717040027C916 /* UIContorlViewController.h */,
+				A587825121D717040027C916 /* UIContorlViewController.m */,
 				A5D64498218AFDEA00B2A0B0 /* ViewController.h */,
 				A5D64499218AFDEA00B2A0B0 /* ViewController.m */,
 			);
@@ -285,6 +304,15 @@
 				A578E27C21D62EDE0023C054 /* NSDate+category.m */,
 			);
 			path = NSDate;
+			sourceTree = "<group>";
+		};
+		A587824C21D713000027C916 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A587824D21D713120027C916 /* UIControl+category.h */,
+				A587824E21D713120027C916 /* UIControl+category.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		A5D64489218AFDEA00B2A0B0 = {
@@ -414,18 +442,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5EA4B5121C89BA300404EC2 /* UnicodeViewController.m in Sources */,
+				A587824B21D70E830027C916 /* BaseViewController.m in Sources */,
 				A5D6449A218AFDEA00B2A0B0 /* ViewController.m in Sources */,
 				A53321562190400F00F06E0C /* UIApplicationViewController.m in Sources */,
 				A59C5803219289C700DA988B /* NSFileManagerViewController.m in Sources */,
 				A517942821B6895800A5004B /* UIImage+Color.m in Sources */,
 				A517942721B6895800A5004B /* UIColor+hex.m in Sources */,
+				A587824F21D713120027C916 /* UIControl+category.m in Sources */,
 				A578E27D21D62EDE0023C054 /* NSDate+category.m in Sources */,
 				A5BEFCA9218FDDFE00E096FD /* UIViewViewController.m in Sources */,
 				A578E27821D609D40023C054 /* UIDeviceViewController.m in Sources */,
 				A533214D2190221500F06E0C /* UIColorViewController.m in Sources */,
 				A5D644A5218AFDEA00B2A0B0 /* main.m in Sources */,
 				A578E26B21D4C18E0023C054 /* UIDevice+device.m in Sources */,
+				A587824821D704A40027C916 /* NSDateViewController.m in Sources */,
 				A5D644CE218B03D700B2A0B0 /* UIImageViewController.m in Sources */,
+				A587825221D717040027C916 /* UIContorlViewController.m in Sources */,
 				A517942621B6895800A5004B /* UIApplication+Category.m in Sources */,
 				A517942921B6895800A5004B /* UIView+frame.m in Sources */,
 				A517942321B6895800A5004B /* NSObject+runtime.m in Sources */,

@@ -21,7 +21,6 @@
 
 
 @interface UnicodeViewController ()
-@property (nonatomic, strong) UITextView *textView;
 
 @end
 
@@ -31,13 +30,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    UITextView *textView = [[UITextView alloc] init];
-    [self.view addSubview:textView];
-    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
-    _textView = textView;
     
     [self testArray];
     [self testSet];

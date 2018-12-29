@@ -23,7 +23,16 @@
 
 @interface NSDate (category)
 
-+ (NSString *)timeStringWithDate:(NSDate *)date;
+- (NSInteger) year;
+
+- (NSInteger) month;
+
+- (NSInteger) day;
+
+- (NSInteger) whatDay;
+
+- (NSInteger) hour;
+
 //将世界时间转化为中国区时间
 + (NSDate *)worldTimeToChinaTime:(NSDate *)date;
 
@@ -75,13 +84,4 @@
 //获取指定日期为所在月的第几周
 + (NSInteger)weekdayOrdinalByDate:(NSDate *)date;
 
-- (int) year;
-
-- (int) month;
-
-- (int) day;
-
-- (int) whatDay;
-
-- (int) hour;
 @end

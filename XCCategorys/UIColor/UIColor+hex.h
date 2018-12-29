@@ -21,6 +21,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (hex)
+/** 随机颜色 */
++ (UIColor *)randomColor;
+
 + (UIColor *)colorWithHexString:(NSString *)color;
 
 //从十六进制字符串获取颜色，

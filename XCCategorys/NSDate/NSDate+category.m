@@ -10,27 +10,6 @@
 
 @implementation NSDate (category)
 
-+ (NSString *)timeStringWithDate:(NSDate *)date
-{
-    NSTimeInterval interval = -[date timeIntervalSinceDate:[NSDate date]];
-    interval = interval < 1 ? 1 : interval;
-    if (interval < 60) {
-        return [NSString stringWithFormat:@"%.f秒前",interval];
-    }
-    else if (interval / 60 < 60)
-    {
-        return [NSString stringWithFormat:@"%.f分钟前",interval / 60];
-    }
-    else if (interval / 3600 < 24)
-    {
-        return [NSString stringWithFormat:@"%.f小时前",interval / 3600];
-    }
-    else
-    {
-        return [NSString stringWithFormat:@"%.f天前",interval / 3600 / 24];
-    }
-}
-
 //日期格式转字符串
 + (NSString *)dateToString:(NSDate *)date withDateFormat:(NSString *)format
 {
@@ -157,25 +136,25 @@
     return comps;
 }
 
-- (int) year {
+- (NSInteger) year {
     return [[NSDate dateComponentByDate:self] year];
 }
 
 
-- (int) month {
+- (NSInteger) month {
     return [[NSDate dateComponentByDate:self] month];
 }
 
-- (int) day {
+- (NSInteger) day {
     return [[NSDate dateComponentByDate:self] day];
 }
 
-- (int) whatDay
+- (NSInteger) whatDay
 {
     return [[NSDate dateComponentByDate:self] weekday]-1;
 }
 
-- (int) hour
+- (NSInteger) hour
 {
     return [[NSDate dateComponentByDate:self] hour];
 }
