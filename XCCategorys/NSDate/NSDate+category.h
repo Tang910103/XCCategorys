@@ -14,6 +14,7 @@
 #define dd @"dd"
 #define yyyy_MM_dd_HH_mm @"yyyy-MM-dd HH:mm"
 #define yyyy_MM_dd_HH_mm_ss @"yyyy-MM-dd HH:mm:ss"
+#define yyyy_MM_dd_HH_mm_ss_zzz @"yyyy-MM-dd HH:mm:ss zzz"
 #define y_M_d_H_m_s @"yyyy年MM月dd日 HH时mm分ss秒"
 #define yyyy_MM_dd @"yyyy-MM-dd"  //1999-01-01日
 #define yyyy_M_d_point @"yyyy.M.d" //1999.1.1
@@ -29,12 +30,16 @@
 
 - (NSInteger) day;
 
-- (NSInteger) whatDay;
+- (NSInteger) weekday;
 
 - (NSInteger) hour;
 
-//将世界时间转化为中国区时间
-+ (NSDate *)worldTimeToChinaTime:(NSDate *)date;
+- (NSInteger) minute;
+
+- (NSInteger) second;
+
+//将世界时间转化为系统时区区时间
++ (NSDate *)worldTimeToSystemTime:(NSDate *)date;
 
 //日期格式转字符串
 + (NSString *)dateToString:(NSDate *)date withDateFormat:(NSString *)format;

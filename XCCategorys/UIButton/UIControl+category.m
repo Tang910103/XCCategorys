@@ -156,20 +156,22 @@
 
 
 - (void)addBlockToEventArrary:(SEL)sel block:(ControlEventBlock)block {
-    NSMutableArray *ar = objc_getAssociatedObject(self, sel);
-    if (!ar || ![ar isKindOfClass:[NSMutableArray class]]) {
-        ar = [NSMutableArray arrayWithArray:ar];
+//    使用set避免重复添加
+    NSMutableSet *set = objc_getAssociatedObject(self, sel);
+    if (!set || ![set isKindOfClass:[NSMutableSet class]]) {
+        set = [NSMutableSet setWithSet:set];
     }
-    [ar addObject:block];
-    objc_setAssociatedObject(self, sel, ar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [set addObject:block];
+    objc_setAssociatedObject(self, sel, set, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (void)removeEventBlockWithSEL:(SEL)sel block:(ControlEventBlock)block {
-    NSMutableArray *ar = objc_getAssociatedObject(self, sel);
-    if (!ar || ![ar isKindOfClass:[NSMutableArray class]]) {
-        ar = [NSMutableArray arrayWithArray:ar];
+    NSMutableSet *set = objc_getAssociatedObject(self, sel);
+    if (![set isKindOfClass:[NSMutableSet class]]) {
+        set = [NSMutableSet setWithSet:set];
+        objc_setAssociatedObject(self, sel, set, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    if (ar.count) {
-        [ar removeObject:block];
+    if ([set containsObject:block]) {
+        [set removeObject:block];
     }
 }
 - (void)responseBlockWithSEL:(SEL)sel {

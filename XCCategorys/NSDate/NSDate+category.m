@@ -29,8 +29,8 @@
     return date;
 }
 
-//将世界时间转化为中国区时间
-+ (NSDate *)worldTimeToChinaTime:(NSDate *)date
+//将世界时间转化为系统时区区时间
++ (NSDate *)worldTimeToSystemTime:(NSDate *)date
 {
     NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
     NSInteger interval = [timeZone secondsFromGMTForDate:date];
@@ -149,9 +149,18 @@
     return [[NSDate dateComponentByDate:self] day];
 }
 
-- (NSInteger) whatDay
+- (NSInteger) weekday
 {
     return [[NSDate dateComponentByDate:self] weekday]-1;
+}
+
+- (NSInteger) minute
+{
+    return [[NSDate dateComponentByDate:self] minute];
+}
+- (NSInteger) second
+{
+    return [[NSDate dateComponentByDate:self] second];
 }
 
 - (NSInteger) hour
