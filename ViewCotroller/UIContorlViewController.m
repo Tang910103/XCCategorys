@@ -47,7 +47,6 @@
         [(UIButton*)sender setTitle:@"touch cancel" forState:UIControlStateNormal];
     }];
     
-    
     UITextField *textField = [[UITextField alloc] init];
     textField.borderStyle = UITextBorderStyleLine;
     [self.view addSubview:textField];

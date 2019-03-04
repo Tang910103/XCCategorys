@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "XCCategorys"
-    s.version      = "1.0.1"
+    s.version      = "1.0.2"
     s.summary      = "常用工具"
     s.description  = "常用工具库"
     s.homepage     = "https://github.com/Tang910103"
