@@ -7,7 +7,6 @@
 //
 
 #import "NSDateViewController.h"
-#import "UIControl+category.h"
 #import "NSDate+category.h"
 
 @interface NSDateViewController ()
@@ -15,8 +14,10 @@
     UIDatePicker *_datePicker;
     NSDate *_date1;
     NSDate *_date2;
+    UIButton *_selectedButton;
 }
 @end
+
 
 @implementation NSDateViewController
 
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.textView.editable = NO;
-    
+
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(dateSelectedDone)];
     
     UIDatePicker *datePicker = [[UIDatePicker alloc] init];
@@ -37,16 +38,6 @@
         make.height.equalTo(@200);
         make.bottom.equalTo(self.view).offset(200);
     }];
-    __block UIButton *button = nil;
-    void(^__block block)(UIControl *) = ^(UIControl *control){
-        UIDatePicker *datePicker = (UIDatePicker *)control;
-        if (button.tag == 1) {
-            self->_date1 = datePicker.date;
-        } else {
-            self->_date2 = datePicker.date;
-        }
-        [button setTitle:[NSDate dateToString:datePicker.date withDateFormat:yyyy_MM_dd_HH_mm_ss_zzz] forState:UIControlStateNormal];
-    };
     
     UILabel *label1 = [[UILabel alloc] init];
     label1.text = @"date1";
@@ -68,10 +59,7 @@
         make.right.equalTo(self.view);
         make.height.centerY.equalTo(label1);
     }];
-    [date1 addTouchUpInsideBlock:^(UIControl *control) {
-        button = (UIButton *)control;
-        [self showDatePicker];
-    }];
+    [date1 addTarget:self action:@selector(clickDate1:) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel *label2 = [[UILabel alloc] init];
     label2.text = @"date2";
@@ -92,12 +80,9 @@
         make.width.height.centerX.equalTo(date1);
         make.centerY.equalTo(label2);
     }];
-    [date2 addTouchUpInsideBlock:^(UIControl *sender) {
-        button = (UIButton *)sender;
-        [self showDatePicker];
-    }];
+    [date2 addTarget:self action:@selector(clickDate2:) forControlEvents:UIControlEventTouchUpInside];
 
-    [datePicker addValueChangedBlock:block];
+    [datePicker addTarget:self action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
     self.textView.textAlignment = NSTextAlignmentLeft;
     [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(date2.mas_bottom).offset(1);
@@ -109,6 +94,27 @@
         [self dateSelectedDone];
     });
 }
+
+- (void)datePickerValueChanged:(UIDatePicker *)datePicker {
+    if (_selectedButton.tag == 1) {
+        self->_date1 = datePicker.date;
+    } else {
+        self->_date2 = datePicker.date;
+    }
+    [_selectedButton setTitle:[NSDate dateToString:datePicker.date withDateFormat:yyyy_MM_dd_HH_mm_ss_zzz] forState:UIControlStateNormal];
+}
+
+
+- (void)clickDate1:(UIButton *)button {
+    _selectedButton = button;
+    [self showDatePicker];
+}
+
+- (void)clickDate2:(UIButton *)button {
+    _selectedButton = button;
+    [self showDatePicker];
+}
+
 
 - (void)showDatePicker {
     [_datePicker setDate:[NSDate date]];

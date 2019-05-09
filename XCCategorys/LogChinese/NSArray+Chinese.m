@@ -10,7 +10,41 @@
 
 #import "NSArray+Chinese.h"
 
+
 static int TJLogLeve = 0;
+
+id contentFormatting(NSMutableString *s, id obj){
+    [s appendString:@"\n"];
+    for (int i = 0; i <= TJLogLeve; i++) {
+        [s appendString:@"\t"];
+    }
+    if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
+        TJLogLeve++;
+    }
+    if ([obj isKindOfClass:NSString.class]) {
+        obj = [[@"\"" stringByAppendingString:obj] stringByAppendingString:@"\""];
+    }
+    if ([obj isKindOfClass:NSNull.class]) {
+        obj = @"null";
+    }
+    return obj;
+}
+
+void tailFormatting(NSMutableString *s){
+    // 去掉最后一个逗号
+    if ([s hasSuffix:@","]) {
+        [s deleteCharactersInRange:NSMakeRange(s.length - 1, 1)];
+    }
+    [s appendString:@"\n"];
+    
+    for (int i = 0; i < TJLogLeve; i++) {
+        [s appendString:@"\t"];
+    }
+    if (TJLogLeve > 0) {
+        TJLogLeve--;
+    }
+}
+
 
 @implementation NSSet (Chinese)
 
@@ -28,29 +62,12 @@ static int TJLogLeve = 0;
     [s appendString:@"{("];
     // 遍历生成键值对字符串描述
     [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
-        [s appendString:@"\n"];
-        for (int i = 0; i <= TJLogLeve; i++) {
-            [s appendString:@"\t"];
-        }
-        if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
-            TJLogLeve++;
-        }
-        [s appendFormat:@"%@%@%@,",[obj isKindOfClass:NSString.class] ? @"\"" : @"", obj, [obj isKindOfClass:NSString.class] ? @"\"" : @""];
+        obj = contentFormatting(s, obj);
+        [s appendFormat:@"%@,", obj];
     }];
     
-    // 去掉最后一个逗号
-    if ([s hasSuffix:@","]) {
-        [s deleteCharactersInRange:NSMakeRange(s.length - 1, 1)];
-    }
-    [s appendString:@"\n"];
-    
-    for (int i = 0; i < TJLogLeve; i++) {
-        [s appendString:@"\t"];
-    }
+    tailFormatting(s);
     [s appendString:@")}"];
-    if (TJLogLeve > 0) {
-        TJLogLeve--;
-    }
     
     return s;
 }
@@ -72,27 +89,12 @@ static int TJLogLeve = 0;
     [s appendString:@"["];
     // 遍历生成键值对字符串描述
     [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [s appendString:@"\n"];
-        for (int i = 0; i <= TJLogLeve; i++) {
-            [s appendString:@"\t"];
-        }
-        if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
-            TJLogLeve++;
-        }
-        [s appendFormat:@"%@%@%@,",[obj isKindOfClass:NSString.class] ? @"\"" : @"", obj, [obj isKindOfClass:NSString.class] ? @"\"" : @""];
+        obj = contentFormatting(s, obj);
+        [s appendFormat:@"%@,", obj];
     }];
-    // 去掉最后一个逗号
-    if ([s hasSuffix:@","]) {
-        [s deleteCharactersInRange:NSMakeRange(s.length - 1, 1)];
-    }
-    [s appendString:@"\n"];
-    for (int i = 0; i < TJLogLeve; i++) {
-        [s appendString:@"\t"];
-    }
+    tailFormatting(s);
     [s appendString:@"]"];
-    if (TJLogLeve > 0) {
-        TJLogLeve--;
-    }
+    
     return s;
 }
 
@@ -115,28 +117,11 @@ static int TJLogLeve = 0;
     [s appendString:@"{"];
     // 遍历生成键值对字符串描述
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        [s appendString:@"\n"];
-        for (int i = 0; i <= TJLogLeve; i++) {
-            [s appendString:@"\t"];
-        }
-        if ([obj isKindOfClass:NSArray.class] || [obj isKindOfClass:NSSet.class] || [obj isKindOfClass:NSDictionary.class]) {
-            TJLogLeve++;
-        }
-        [s appendFormat:@"\"%@\" : %@%@%@;", key,[obj isKindOfClass:NSString.class] ? @"\"" : @"", obj, [obj isKindOfClass:NSString.class] ? @"\"" : @""];
+        obj = contentFormatting(s, obj);
+        [s appendFormat:@"\"%@\" : %@,", key, obj];
     }];
-    // 去掉最后一个逗号
-    if ([s hasSuffix:@","]) {
-        [s deleteCharactersInRange:NSMakeRange(s.length - 1, 1)];
-    }
-    [s appendString:@"\n"];
-    
-    for (int i = 0; i < TJLogLeve; i++) {
-        [s appendString:@"\t"];
-    }
+    tailFormatting(s);
     [s appendString:@"}"];
-    if (TJLogLeve > 0) {
-        TJLogLeve--;
-    }
     return s;
 }
 
