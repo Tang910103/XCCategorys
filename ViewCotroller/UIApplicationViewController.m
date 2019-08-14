@@ -24,6 +24,8 @@
     label.numberOfLines = 0;
     [self.view addSubview:label];
     label.text = [NSString stringWithFormat:@"app名称：%@\napp版本：%@\napp构建版本：%@\nbundleID：%@\n状态栏颜色：%@",TJ_Application.appName,TJ_Application.appVersion,TJ_Application.appBuildVersion,TJ_Application.appBundleID,TJ_Application.statusBarIsWhite?@"白色":@"黑色"];
+    
+    NSLog(@"%@",[[NSBundle mainBundle] infoDictionary]);
 }
 
 /*

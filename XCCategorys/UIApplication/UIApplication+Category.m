@@ -14,7 +14,7 @@
 @implementation UIApplication (Category)
 - (NSString *)appName
 {
-    return [TJ_InfoDictionary objectForKey:@"CFBundleName"];
+    return [TJ_InfoDictionary objectForKey:@"CFBundleDisplayName"];
 }
 - (NSString *)appVersion
 {
